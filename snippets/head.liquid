@@ -8,11 +8,6 @@
 {{ 'base.css' | asset_url | stylesheet_tag }}
 {{ 'customise.css' | asset_url | stylesheet_tag }}
 
-{% if template contains 'customers' %}
-  {{ "shopify_common.js" | shopify_asset_url | script_tag }}
-  {{ "customer_area.js"  | shopify_asset_url | script_tag }}
-{% endif %}
-
 {% if template == 'index' %}
   <title>{{ shop.name }} | {{ settings.shop_tagline }}</title>
 {% elsif template == '404' %}
