@@ -4,8 +4,6 @@
 
 {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
 {{ 'bootstrap-responsive.css' | asset_url | stylesheet_tag }}
-{{ 'base.css' | asset_url | stylesheet_tag }}
-{{ 'customise.css' | asset_url | stylesheet_tag }}
 
 {% if template == 'index' %}
   <title>{{ shop.name }} | {{ settings.shop_tagline }}</title>
